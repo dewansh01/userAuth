@@ -5,4 +5,5 @@ app_name = 'authApp'
 urlpatterns = [
 path('create/',views.createUserView.as_view(),name='create'),
 path('token/',views.createTokenView.as_view(),name='token'),
+path('me/',views.ManageUserView.as_view(),name='me')
 ]
